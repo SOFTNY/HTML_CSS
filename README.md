@@ -8,8 +8,6 @@ Block__Element--Modifier <br/>
 
 <br/>
 <br/>
-<br/>
-
 
 # [🔗anti-aliasing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth)
 폰트가 더욱 부드럽게 보일 수 있지만, 선명함은 떨어질 수 있다.
@@ -20,11 +18,8 @@ Block__Element--Modifier <br/>
 /* 미지원 브라우저 안티앨리어싱 */
 transform: rotate(0.03deg);
 ```
-
-<br/>
 출처 : https://creativestudio.kr/1398
 
-<br/>
 <br/>
 <br/>
 
@@ -54,3 +49,16 @@ transform: rotate(0.03deg);
 |`lg`|1024px|`@media (min-width: 1024px) { ... }`|
 |`xl`|1280px|`@media (min-width: 1280px) { ... }`|
 |`2xl`|1536px|`@media (min-width: 1536px) { ... }`|
+
+<br/>
+<br/>
+
+# [🔗Pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+- ::Pseudo-element : CSS 의사 요소는 선택한 요소의 특정 부분에 스타일을 지정(다른상태일 때)
+- :Pseudo-class : CSS 의사 클래스는 선택한 요소의 특수 상태를 지정하는 선택기에 추가된 키워드(내부의 일부분만 스타일줄 때)
+<br/>
+
+출처 : https://developer.mozilla.org/ko/docs/Glossary/Pseudo-class
+<br/>
+출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
