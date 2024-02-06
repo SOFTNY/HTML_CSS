@@ -10,7 +10,6 @@ Block__Element--Modifier <br/>
 <br/>
 <br/>
 
-
 # [🔗anti-aliasing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth)
 폰트가 더욱 부드럽게 보일 수 있지만, 선명함은 떨어질 수 있다.
 ```css
@@ -20,8 +19,6 @@ Block__Element--Modifier <br/>
 /* 미지원 브라우저 안티앨리어싱 */
 transform: rotate(0.03deg);
 ```
-
-<br/>
 출처 : https://creativestudio.kr/1398
 
 <br/>
@@ -54,3 +51,13 @@ transform: rotate(0.03deg);
 |`lg`|1024px|`@media (min-width: 1024px) { ... }`|
 |`xl`|1280px|`@media (min-width: 1280px) { ... }`|
 |`2xl`|1536px|`@media (min-width: 1536px) { ... }`|
+
+<br/>
+<br/>
+
+# [🔗Pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+CSS에서, 가상 클래스 선택자는 문서 트리의 정보가 아닌 상태에 따라 요소를 대상으로 한다.
+<br/>
+
+출처 : https://developer.mozilla.org/ko/docs/Glossary/Pseudo-class
+
