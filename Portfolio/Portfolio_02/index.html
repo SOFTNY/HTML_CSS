@@ -3,9 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Portfolio_02</title>
+  <!-- js -->
+  <!--bootstrap js-->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/29cf9aada0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+
+  <div id="background-container">
+  <!-- header 소개 프로필 -->
+  <header class="container card">
+    <div class="row">
+      <!-- 프로필 사진 -->
+      <div class="col-lg-2 col-sm-4 profile-img">
+        <img width="100" src="img/profile.jpg" alt="profile-pic">
+      </div>
+      <!-- 소개 글 -->
+      <div class="col-lg-6 col-sm-8 text-right m-auto">
+        <h1>Nayoung Kim</h1>
+        <p class="mtb-05">UX/UI Publisher</p>
+        <p class="skyBlue-text mtb-05"><i class="fa-solid fa-location-dot"></i> 경기 시흥시</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn skyBlue-btn mtb-05" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Contact
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Contact</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                010-xxxx-xxxx
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn skyBlue-btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 개인정보 -->
+      <div class="col-lg-4 col-sm-12 d-sm-flex m-auto">
+          <div class="col-4">
+            <p class="ptb-05">Location</p>
+            <p class="ptb-05">Age</p>
+            <p class="ptb-05">Experience</p>
+            <p class="ptb-05">department</p>
+          </div>
+          <div class="col-8">
+            <p class="ptb-05">경기 시흥시</p>
+            <p class="ptb-05">00년생</p>
+            <p class="ptb-05">신입</p>
+            <p class="ptb-05">중국·소프트</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="line-container">
+    <p class="line-text skyBlue-text">Profile</p>
+    <div class="line-skyblue"></div>
+    <div class="line-gray"></div>
+  </div>
+
+  <!-- main 상세내용 -->
+  <main class="container">
+    <div class="row">
+      <!-- PROJECT -->
+      <div class="card col-lg-2 mx-lg-2">
+        <div class="project content-container">
+          <h1 class="title">PROJECT</h1>
+          <p class="ptb-05">
+            <a href="#">SAIB : UX/UI Redesign - Figma</a>
+          </p>
+          <p class="ptb-05">
+            <a href="#">Hwasahae : cosmetics Shopping page - JS</a>
+          </p>
+          <p class="ptb-05">
+            <a href="#">Cocktail : cocktail page - React.js</a>
+          </p>
+          <p class="ptb-05">
+            <a href="#">Portfolio : Portfolio page - HTML/CSS</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="card col-lg-6 mx-lg-2">
+        <div class="content-container">
+          <h1 class="title">ABOUT</h1>
+          <p>I'm Na-young Kim, dreaming of becoming a publisher who pursues growth while thinking about the UX/UI user center.</p>
+        </div>
+        <div class="line-gray-thin"></div>
+        <!-- SKILLS -->
+        <div class="skills">
+          <h1 class="title">SKILLS</h1>
+          <div class="skills-container">
+            <p class="gray-radius">
+              <i class="fa-brands fa-html5"></i> 
+              <span>HTML5</span>
+            </p>
+            <p class="gray-radius">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS3</span>
+            </p>
+            <p class="gray-radius">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </p>
+            <p class="gray-radius">
+              <i class="fa-solid fa-images"></i>
+              <span>Adobe Photoshop</span>
+            </p>
+            <p class="gray-radius">
+              <i class="fa-solid fa-video"></i>
+              <span>Adobe Premiere Pro</span>
+            </p>
+            <p class="gray-radius">
+              <i class="fa-brands fa-figma"></i>
+              <span>Figma</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up -->
+      <div class="card col-lg-3 d-sm-flex-column text-sm-center mx-lg-2">
+        <div>
+          <div class="skyBlue-text">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+          <h3 class="title">
+            <a href="https://github.com/SOFTNY">This is my GitHub link</a>
+          </h3>
+          <button class="skyBlue-btn mtb-1">Sign Up</button>
+          <p>
+            <a class="skyBlue-text" href="#">Already a member?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+
+
 </body>
 </html>

@@ -1,0 +1,124 @@
+/* 전체 배경 설정 */
+#background-container{
+  background: linear-gradient(to top, #f2fcfe, rgb(162, 205, 249), #f2fcfe);
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* margin setting */
+.mtb-1{
+  margin: 1rem 0;
+}
+.mtb-05{
+  margin: 0.5rem 0;
+}
+/* padding setting */
+.ptb-05{
+  padding: 0.5rem 0;
+}
+
+/* button style */
+.skyBlue-btn{
+	background: rgb(134, 192, 250);
+	border: none;
+	border-radius: 0.2rem;
+	padding: 0.5rem 1.5rem;
+	color: #fff;
+  cursor: pointer;
+}
+.skyBlue-btn:hover{
+  background: rgb(91, 130, 169);
+}
+
+/* color style */
+.skyBlue-text{
+	color: rgb(134, 192, 250);
+}
+
+/* 카드 */
+.card{
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px #666;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+/* 선 */
+.line-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.line-text{
+  position: relative;
+  top: -20px;
+  left: 110px;
+}
+.line-gray-thin{
+  border: 1px solid #cbcbcb;
+  width: 100%;
+}
+.line-gray{
+  border: 3px solid #cbcbcb;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.line-skyblue{
+  border: 3px solid rgb(134, 192, 250);
+  width: 10%;
+  position: absolute;
+  left: 98px;
+  z-index: 5;
+}
+
+/* 제목 */
+.title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.profile-img img{
+  border-radius: 50%;
+}
+
+/* 내용 컨테이너 */
+.content-container{
+  padding: 2rem 0;
+}
+
+/* PROJECT */
+.project a:hover{
+  color: rgb(134, 192, 250);
+}
+
+/* SKILLS */
+.skills{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.skills-container{
+  display: flex;
+}
+
+.gray-radius{
+  border: 1.5px solid #cbcbcb;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+.gray-radius:hover{
+  color: rgb(134, 192, 250);
+  transform: scale(1.2);
+}
+
+/* SignUp */
+.fa-droplet{
+  font-size: 5rem;
+  padding: 2rem;
+}
