@@ -54,8 +54,8 @@ transform: rotate(0.03deg);
 <br/>
 
 # [🔗Pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
-- Pseudo-element : CSS 의사 요소는 선택한 요소의 특정 부분에 스타일을 지정
-- Pseudo-class : CSS 의사 클래스는 선택한 요소의 특수 상태를 지정하는 선택기에 추가된 키워드
+- Pseudo-element : CSS 의사 요소는 선택한 요소의 특정 부분에 스타일을 지정(다른상태일 때)
+- Pseudo-class : CSS 의사 클래스는 선택한 요소의 특수 상태를 지정하는 선택기에 추가된 키워드(내부의 일부분만 스타일줄 때)
 <br/>
 
 출처 : https://developer.mozilla.org/ko/docs/Glossary/Pseudo-class
