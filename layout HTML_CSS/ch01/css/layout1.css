@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+header{
+  width: 100%;
+  height: 20vh;
+  background: #FBFADA;
+}
+
+aside{
+  float: left;
+  width: 20%;
+  height: 80vh;
+  background: #ADBC9F;
+
+}
+
+main{
+  float: left;
+  width: 80%;
+  height: 80vh;
+  background: #436850
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  height: 20vh;
+  background: #12372A;
+}

@@ -1,0 +1,241 @@
+/* 커스텀 폰트 */
+@font-face{
+  font-family: NotoSans;
+  src: url(../../font/NotoSans/NotoSans-Regular.woff2) format('woff2');
+  font-style: normal;
+}
+
+/* 초기화 세팅 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NotoSans;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* 네브 */
+.nav-container{
+  display: flex;
+  position: fixed;
+  padding: 1.3rem;
+  font-size: 25px;
+  font-weight: 600;
+  background: #ffffff;
+  width: 100%;
+  z-index: 999;
+}
+.nav-container .nav-menu{
+  display: flex;
+}
+.nav-container .item{
+  padding-left: 50px;
+}
+.nav-menu>a:hover{
+  color: #8e6935;
+}
+
+/* 메인 배너 */
+.main-background{
+  width: 100%;
+  height: 500px;
+  background: url(../img/banner.jpg) no-repeat center;
+  background-size: 100%;
+  text-align: center
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  color: #fff;
+}
+
+.main-background .main-btn{
+  width: 20%;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-size: 25px;
+  cursor: pointer;
+  background: #fff;
+  color: #776B5D;
+  font-weight: 700;
+}
+
+/* 메인 메모지 내용 */
+.main-memo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  top: -50px;
+  background: #776B5D;
+  box-shadow: 5px 5px 3px #000000;
+  border-radius: 10px;
+  color: #fff;
+  width: 40%;
+  padding: 2rem;
+  text-align: center;
+  z-index: 5;
+}
+.main-memo:hover{
+  transform: scale(1.2);
+}
+
+/* 반응형 레이아웃 */
+.responseLayout-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.responseLayout-container .item{
+  padding: 30px;
+}
+.responseLayout-container .col2{
+  display: flex;
+}
+.responseLayout-container i{
+  background: #776B5D;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.responseLayout-container i:hover{
+  background: #9c9082;
+  transform: scale(1.2);
+}
+
+/* 상품 레이아웃 애니메이션 */
+.shop-container{
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+.shop-item{
+  width: 33%;
+  padding: 2rem;
+  cursor: pointer;
+}
+.shop-item img{
+  width: 100%;
+  display: block;
+}
+.overlay-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000082;
+  margin-top: 100%;
+  transition: all 1s;
+  text-align: center;
+  color: #fff;
+}
+.overlay-wrap:hover .overlay{
+  margin-top: 50%;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .responseLayout-container .col2{
+    display: block;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .responseLayout-container{
+    flex-direction: column;
+  }
+}
+
+/* 폼 contact */
+.form-background{
+  background: url('../img/banner.jpg') no-repeat;
+  background-size: cover;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+}
+.form-white{
+  background: #fff;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+.form-contact h2{
+  padding-bottom: 2rem;
+}
+.form-contact label{
+  position: relative;
+  bottom: 3px;
+}
+.form-contact .container{
+  padding: 5px;
+}
+.form-contact input{
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #776B5D;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-FirstName{
+  float: left;
+  width: 50%;
+}
+.form-LastName{
+  float: left;
+  width: 50%;
+}
+.form-message input{
+  height: 100px;
+}
+.form-footer{
+  display: flex;
+  justify-content:space-between;
+}
+.form-subscribe{
+  display: flex;
+}
+.form-subscribe label{
+  padding-left: 5px;
+}
+.form-send button{
+  width: 100px;
+  border: none;
+  background: #776B5D;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container{
+    font-size: 15px;
+  }
+  .main-background .main-btn{
+    font-size: 18px;
+  }
+  .nav-container{
+    font-size: 20px;
+  }
+}
