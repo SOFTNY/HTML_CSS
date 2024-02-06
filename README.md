@@ -8,7 +8,6 @@ Block__Element--Modifier <br/>
 
 <br/>
 <br/>
-<br/>
 
 # [🔗anti-aliasing](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth)
 폰트가 더욱 부드럽게 보일 수 있지만, 선명함은 떨어질 수 있다.
@@ -21,7 +20,6 @@ transform: rotate(0.03deg);
 ```
 출처 : https://creativestudio.kr/1398
 
-<br/>
 <br/>
 <br/>
 
@@ -56,8 +54,11 @@ transform: rotate(0.03deg);
 <br/>
 
 # [🔗Pseudo-element](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
-CSS에서, 가상 클래스 선택자는 문서 트리의 정보가 아닌 상태에 따라 요소를 대상으로 한다.
+- Pseudo-element : CSS 의사 요소는 선택한 요소의 특정 부분에 스타일을 지정
+- Pseudo-class : CSS 의사 클래스는 선택한 요소의 특수 상태를 지정하는 선택기에 추가된 키워드
 <br/>
 
 출처 : https://developer.mozilla.org/ko/docs/Glossary/Pseudo-class
+<br/>
+출처 : https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
 
