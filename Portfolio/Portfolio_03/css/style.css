@@ -1,0 +1,149 @@
+/* 초기화 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, li, ol{
+  list-style:none;
+}
+
+nav{
+  font-size: 1.3rem;
+}
+form{
+  padding: 0 4rem;
+}
+#navbarNav{
+  text-align: center;
+}
+
+/* Custom */
+/* card Custom */
+.card-line{
+  box-shadow: 2px 2px 3px #666;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.line-content{
+  float: left;
+}
+.line-icon{
+  float: right;
+  font-size: 2.5rem;
+  color: #666;
+}
+
+/* line Custom */
+.line-gray{
+  border-bottom: 1px solid #e8e8e8; 
+}
+.line-skyBlue{
+  border-left: 4px solid rgb(142, 187, 255);
+}
+.line-green{
+  border-left: 4px solid rgb(46, 129, 85);
+}
+.line-purple{
+  border-left: 4px solid rgb(81, 45, 126);
+}
+.line-yellow{
+  border-left: 4px solid rgb(255, 247, 0);
+}
+
+
+.card-title{
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 3px #666;
+  margin: 1rem 0;
+}
+.card-title ul{
+  padding-left: 0px;
+}
+.card-title li{
+  padding: 1rem;
+}
+
+
+
+/* 검색 */
+.search input{
+  width: 200px;
+  transition: all 1s;
+}
+.search input:focus{
+  width: 400px;
+}
+
+/* 사이드바 */
+.sidebar{
+  width: 200px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 5;
+  text-align: right;
+  transform: translateX(-150px);
+  transition: all 1s;
+}
+.sidebar:hover{
+  transform: translateX(0px);
+  text-align: center;
+}
+.side-item{
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+@keyframes slide{
+  0%{transform: translateX(-250px);}
+  50%{transform: translateX(20px) skewX(-30deg);}
+  100%{transform: translateX(0px);}
+}
+.navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+
+
+.title{
+  background: #f6f6f6;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.content{
+  padding: 2rem;
+}
+.content-item{
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+}
+.content-left{
+  float: left;
+  width: 60%;
+}
+.content-right{
+  float: right;
+  background: skyblue;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+}
+
+/* main */
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 3rem 1rem 6rem;
+}
