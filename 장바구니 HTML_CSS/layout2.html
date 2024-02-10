@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <!-- open graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://nana0.dothome.co.kr/HTML_CSS/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20HTML_CSS/layout2.html">
+  <meta property="og:url"
+    content="http://nana0.dothome.co.kr/HTML_CSS/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20HTML_CSS/layout2.html">
   <meta property="og:title" content="Shoes Shop">
-  <meta property="og:image" content="https://i.pinimg.com/564x/b4/03/f9/b403f96362a311ff9271b1748de7a37a.jpg"/>
+  <meta property="og:image" content="https://i.pinimg.com/564x/b4/03/f9/b403f96362a311ff9271b1748de7a37a.jpg" />
   <meta property="og:image:width" content="564">
   <meta property="og:image:height" content="1001">
   <meta property="og:description" content="당신이 원하는 이쁜 신발을 Shoes Shop에서 찾아보세요!">
   <meta property="og:site_name" content="Shoes Shop">
   <meta property="og:locale" content="ko_KR">
-
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -24,18 +25,20 @@
   <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
   <meta name="keywords" content="shoes, shoes shop, new shoes, shoes 웹사이트, cart, 장바구니">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/layout2.css">
+  <link rel="stylesheet" href="css/reset.css">
 
   <!-- js -->
   <script defer src="https://kit.fontawesome.com/29cf9aada0.js" crossorigin="anonymous"></script>
@@ -45,67 +48,63 @@
 
 <body>
 
-  <div class="ani-navbar">
-    <h4>Menu</h4>
-    <p style="text-align: center;">Item</p>
-  </div>
-
-
   <!-- 헤더 -->
-  <nav class="nav-container">
-    <div class="nav-menu"><a href="#"><i class="fa-brands fa-shopify"></i>Shoes Shop</a></div>
-    <div style="flex-grow: 1;"></div>
-    <div class="nav-menu item"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></div>
-    <div class="nav-menu item"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+  <header id="header">
+    <div class="header-coupon">
+      <a href="">
+        <p>신규가입시 무료배송 및 할인쿠폰까지! 다양한 혜택을 받아보세요! 
+          <i class="fa-solid fa-chevron-right"></i>
+        </p>
+      </a>
+    </div>
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="layout2.html">HugShoe</a>
+      </div>
+      <div class="header-menu">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 배너 -->
+  <section id="banner">
+    <div class="banner-container">
+      <div class="banner-content">
+        <h1 class="banner-title">QYCKABY Winter Cotton Slippers</h1>
+        <p class="banner-tag">#따뜻한 보온성 #부드러운 촉감 #편안한 착화감</p>
+        <p class="banner-coupon">구매내역 인증하면 3천원 쿠폰까지!</p>
+        <button class="cotton-button">Shop Now</button>
+      </div>
+      <div class="banner-img">
+        <img src="img/banner_cottonShoes.jpg" alt="banner_cottonShoes">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 네브 메뉴 -->
+  <nav id="nav">
+    <div class="nav-menu">
+      <div class="nav-item">
+        <a href="">shoes</a>
+      </div>
+      <div class="nav-item">
+        <a href="">new</a>
+      </div>
+      <div class="nav-item">
+        <a href="">best</a>
+      </div>
+      <div class="nav-item">
+        <a href="">coupon</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- 메인 -->
+
   <main>
-    <!-- 메인배너 -->
-    <div class="main-background">
-      <div class="main-container">
-        <h1 class="main-title">Buy Our <span>Shoes!</span></h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br/>
-        Officiis placeat fugiat ducimus consequuntur consectetur ullam dignissimos at ut porro expedita, <br/>
-        minima quos modi assumenda ad, omnis vitae ex fugit inventore!</p>
-        <button class="main-btn">Buy now</button>
-      </div>
-    </div>
-
-    <!-- 메모지 내용 -->
-    <div class="main-memo">
-      <h4>How we design our shoes</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium qui a animi error suscipit pariatur labore earum, quibusdam fugit. Cum tempora explicabo deleniti quam quis doloribus, molestiae aliquid enim?</p>
-    </div>
-
-    <!-- 반응형 레이아웃 가로정렬 -->
-    <div class="responseLayout-container">
-      <div class="col2">
-        <div class="item">
-          <i class="fa-solid fa-cart-shopping fa-2x"></i>
-          <h4>Fast Shipping</h4>
-          <p>loren ipsum</p>
-        </div>
-        <div class="item">
-          <i class="fa-solid fa-wand-sparkles fa-2x"></i>
-          <h4>Good Service</h4>
-          <p>loren ipsum</p>
-        </div>
-      </div>
-  
-      <div  class="col2">
-        <div class="item">
-          <i class="fa-solid fa-ticket fa-2x"></i>
-          <h4>Free Coupons</h4>
-          <p>loren ipsum</p>
-        </div>
-        <div class="item">
-          <i class="fa-solid fa-shoe-prints fa-2x"></i>
-          <h4>New Products</h4>
-          <p>loren ipsum</p>
-        </div>
-      </div>
-    </div>
 
     <!-- 상품 레이아웃 애니메이션 -->
     <div class="shop-bg">
@@ -146,10 +145,6 @@
       </div>
     </div>
 
-
-    <button class="go">흔들버튼</button>
-    <h1 class="plus" style="display: flex; justify-content: center;">+</h1>
-
     <!-- 폼 양식 -->
     <div class="form-background">
       <div class="form-white">
@@ -180,10 +175,11 @@
               <button>SEND</button>
             </div>
           </div>
-          </div>
-        </form>
       </div>
+      </form>
+    </div>
     </div>
   </main>
 </body>
+
 </html>

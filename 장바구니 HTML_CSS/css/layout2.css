@@ -1,129 +1,138 @@
-/* 커스텀 폰트 */
-@font-face{
-  font-family: NotoSans;
-  src: url(../../font/NotoSans/NotoSans-Regular.woff2) format('woff2');
-  font-style: normal;
-}
+/* 로고 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); 
+/* 네브 메뉴 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 
-/* 초기화 세팅 */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: NotoSans;
+/* 헤더 */
+#header{
+  width: 100%;
+  height: 15vh;
+  background: #fff;
 }
-
-a{
-  text-decoration: none;
-  color: #000;
+.header-coupon{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: #3c3c3c;
+  cursor: pointer;
 }
-
-.ani-navbar:hover p{
-  animation: slide;
-  animation-duration: 1s;
-}
-
-@keyframes slide{
-  0%{
-    transform: translateX(-250px);
-  }
-  50%{
-    transform: translateX(20px) skewX(-30deg);
-  }
-  100%{
-    transform: translateX(0px);
-  }
-}
-
-.ani-navbar{
-  width: 200px;
-  background: black;
+.header-coupon a{
   color: #fff;
-  height: 100%;
-  padding: 25px;
-  position: fixed;
-  z-index: 999;
-  text-align: right;
-  transition: all 1s;
-  transform: translateX(-150px);
+  font-size: 0.8rem;
 }
-.ani-navbar:hover{
-  transform: translateX(0px);
-  text-align: center;
+.header-coupon i{
+  padding: 0 1rem;
+}
+.header-container{
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-container .header-logo{
+  font-size: 2.2rem;
+  font-family: 'Dancing Script', cursive;
+}
+.header-container .header-menu{
+  font-size: 1.5rem;
+}
+.header-menu a{
+  padding: 0 1.5rem;
+  color: #3c3c3c;
+}
+.header-menu a:hover{
+  padding: 0 1.5rem;
+  color: #D0C9BF;
 }
 
-/* 네브 */
-.nav-container{
+/* 배너 */
+#banner{
   display: flex;
-  position: fixed;
-  padding: 1.3rem;
-  font-size: 25px;
-  font-weight: 600;
-  background: #ffffff;
-  width: 100%;
-  z-index: 7;
+  margin: auto;
+  background: #D0C9BF;
+  width: 90%;
+  height: 70vh;
+  border-radius: 0.3rem;
 }
-.nav-container .nav-menu{
+.banner-container{
+  width: 90%;
+  padding: 0 2rem;
   display: flex;
-}
-.nav-container .item{
-  padding-left: 50px;
-}
-.nav-menu>a:hover{
-  color: #8e6935;
-}
-
-/* 메인 배너 */
-.main-background{
-  width: 100%;
-  height: 500px;
-  background: url(../img/banner.jpg) no-repeat center;
-  background-size: 100%;
-  text-align: center
-}
-.main-container{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
-  color: #fff;
 }
-
-.main-background .main-btn{
-  width: 20%;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-  font-size: 25px;
-  cursor: pointer;
-  background: #fff;
-  color: #776B5D;
-  font-weight: 700;
+.banner-content{
+  width: 50%;
 }
-
-/* 메인 메모지 내용 */
-.main-memo{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  top: -50px;
-  background: #776B5D;
-  box-shadow: 2px 2px 3px #3a3a3a;
-  border-radius: 10px;
-  color: #fff;
+.banner-content h1{
+  font-size: 2rem;
+}
+.banner-content .banner-tag{
+  color: #25282B;
+  font-size: 1rem;
+  padding: 1.3rem 0;
+}
+.banner-content .banner-coupon{
+  color: #75787B;
+  font-size: 0.9rem;
+  padding-bottom: 5rem;
+}
+.banner-img{
   width: 40%;
-  padding: 2rem;
-  text-align: center;
-  z-index: 5;
 }
-.main-memo:hover{
-  transform: scale(1.2);
+.banner-img img{
+  width: 100%;
 }
 
-/* 반응형 레이아웃 */
+/* nav 메뉴 */
+#nav{
+  width: 100%;
+  display: flex;
+  padding: 2.5rem 0;
+}
+.nav-menu{
+  display: flex;
+  margin: auto;
+}
+.nav-menu .nav-item{
+  display: flex;
+  padding: 0 3rem;
+  font-size: 2.5rem;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.nav-item a{
+  cursor: pointer;
+  color: #3c3c3c;
+  text-align: left;
+  padding: 0.5rem;
+}
+.nav-item a:hover{
+  background: #dfd7cd;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-menu{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .nav-menu .nav-item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  } 
+  .nav-item i{
+    font-size: 3rem;
+  }
+}
+
+
+
+/* 여기옛날 */
 .responseLayout-container{
   width: 100%;
   display: flex;
