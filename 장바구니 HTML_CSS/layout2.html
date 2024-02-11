@@ -7,12 +7,12 @@
   <meta property="og:type" content="website">
   <meta property="og:url"
     content="http://nana0.dothome.co.kr/HTML_CSS/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20HTML_CSS/layout2.html">
-  <meta property="og:title" content="Shoes Shop">
+  <meta property="og:title" content="HugShoe">
   <meta property="og:image" content="https://i.pinimg.com/564x/b4/03/f9/b403f96362a311ff9271b1748de7a37a.jpg" />
   <meta property="og:image:width" content="564">
   <meta property="og:image:height" content="1001">
-  <meta property="og:description" content="당신이 원하는 이쁜 신발을 Shoes Shop에서 찾아보세요!">
-  <meta property="og:site_name" content="Shoes Shop">
+  <meta property="og:description" content="당신이 원하는 이쁜 신발을 HugShoe에서 찾아보세요!">
+  <meta property="og:site_name" content="HugShoe">
   <meta property="og:locale" content="ko_KR">
 
   <!-- favicon -->
@@ -32,7 +32,7 @@
   <link rel="manifest" href="favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="keywords" content="shoes, shoes shop, new shoes, shoes 웹사이트, cart, 장바구니">
+  <meta name="keywords" content="shoes, shoes shop, new shoes, shoes 웹사이트,HugShoe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- css -->
@@ -43,7 +43,7 @@
   <!-- js -->
   <script defer src="https://kit.fontawesome.com/29cf9aada0.js" crossorigin="anonymous"></script>
 
-  <title>Buy Our Shoes</title>
+  <title>HugShoe</title>
 </head>
 
 <body>
@@ -52,7 +52,7 @@
   <header id="header">
     <div class="header-coupon">
       <a href="">
-        <p>신규가입시 무료배송 및 할인쿠폰까지! 다양한 혜택을 받아보세요! 
+        <p>신규가입시 무료배송 및 할인쿠폰까지! 다양한 혜택을 받아보세요!
           <i class="fa-solid fa-chevron-right"></i>
         </p>
       </a>
@@ -73,13 +73,13 @@
   <section id="banner">
     <div class="banner-container">
       <div class="banner-content">
-        <h1 class="banner-title">QYCKABY Winter Cotton Slippers</h1>
+        <h1 class="banner-title">Winter Cotton Slippers</h1>
         <p class="banner-tag">#따뜻한 보온성 #부드러운 촉감 #편안한 착화감</p>
         <p class="banner-coupon">구매내역 인증하면 3천원 쿠폰까지!</p>
         <button class="cotton-button">Shop Now</button>
       </div>
       <div class="banner-img">
-        <img src="img/banner_cottonShoes.jpg" alt="banner_cottonShoes">
+        <img src="img/cottonShoes_white.jpg" alt="cottonShoes_white">
       </div>
     </div>
   </section>
@@ -103,83 +103,104 @@
     </div>
   </nav>
 
-
-  <main>
-
-    <!-- 상품 레이아웃 애니메이션 -->
-    <div class="shop-bg">
-      <div class="shop-container">
-        <div class="shop-item">
-          <div style="position: relative;">
-            <div class="overlay-wrap">
-              <div class="overlay">
-                <div>Sky Shoes</div>
-                <div>€ 189.00</div>
-              </div>
-            </div>
-            <img src="img/product_01.jpg" alt="product_01">
-          </div>
-        </div>
-        <div class="shop-item">
-          <div style="position: relative;">
-            <div class="overlay-wrap">
-              <div class="overlay">
-                <div>Pink Shoes</div>
-                <div>€ 189.00</div>
-              </div>
-            </div>
-            <img src="img/product_02.jpg" alt="product_02">
-          </div>
-        </div>
-        <div class="shop-item">
-          <div style="position: relative;">
-            <div class="overlay-wrap">
-              <div class="overlay">
-                <div>gray Shoes</div>
-                <div>€ 189.00</div>
-              </div>
-            </div>
-            <img src="img/product_03.jpg" alt="product_03">
-          </div>
-        </div>
-      </div>
+  <!-- 메인 상품들 -->
+  <main id="product">
+    <div class="title">
+      <span>New Product</span>
     </div>
 
-    <!-- 폼 양식 -->
-    <div class="form-background">
-      <div class="form-white">
-        <form class="form-contact" action="post">
-          <h2>contact us</h2>
-          <div class="container">
-            <div><label for="email">Your Email</label></div>
-            <input type="email" id="email" placeholder="email@example.com">
-          </div>
-          <div class="container form-FirstName">
-            <div><label for="firstName">First name</label></div>
-            <input type="email" id="firstName">
-          </div>
-          <div class="container form-LastName">
-            <div><label for="LastName">Last name</label></div>
-            <input type="text" id="LastName">
-          </div>
-          <div class="container form-message">
-            <div><label for="message">Message</label></div>
-            <input type="text" id="message">
-          </div>
-          <div class="form-footer">
-            <div class="container form-subscribe">
-              <input type="checkbox" id="subscribe">
-              <label for="subscribe">Subscribe</label>
-            </div>
-            <div class="form-send">
-              <button>SEND</button>
-            </div>
-          </div>
+    <div class="product-container">
+      <div class="product-item">
+        <img src="img/cottonShoes_brown.png" alt="cottonShoes_brown">
+        <div class="product-content">
+          <p class="product-tag">#따뜻한 보온성 #부드러운 촉감 #편안한 착화감</p>
+          <p class="product-title">Winter Cotton Slippers : Brown</p>
+          <p class="product-price">120,000원</p>
+        </div>
       </div>
-      </form>
-    </div>
+
+      <div class="product-item">
+        <img src="img/cottonShoes_darkgray.png" alt="cottonShoes_darkgray">
+        <div class="product-content">
+          <p class="product-tag">#따뜻한 보온성 #부드러운 촉감 #편안한 착화감</p>
+          <p class="product-title">Winter Cotton Slippers : DarkGray</p>
+          <p class="product-price">120,000원</p>
+        </div>
+      </div>
+
+      <div class="product-item">
+        <img src="img/cottonShoes_pink.png" alt="cottonShoes_pink">
+        <div class="product-content">
+          <p class="product-tag">#따뜻한 보온성 #부드러운 촉감 #편안한 착화감</p>
+          <p class="product-title">Winter Cotton Slippers : Pink</p>
+          <p class="product-price">120,000원</p>
+        </div>
+      </div>
     </div>
   </main>
-</body>
 
+  <!-- 폼 양식 -->
+  <div id="form">
+    <form class="form-container" action="post">
+      <h1>1:1 문의사항</h1>
+      <div class="form-content">
+        <h2>문의 유형</h2>
+        <div class="form-select">
+          <select>
+            <option value="문의 유형 선택" selected disabled>문의 유형 선택</option>
+            <option value="환불/교환">환불/교환</option>
+            <option value="배송">배송</option>
+            <option value="인터넷">인터넷 문제</option>
+            <option value="기타">기타</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-content">
+        <label for="Inquiry_title">
+          <h2>문의 제목</h2>
+        </label>
+        <div class="form-input">
+          <input id="Inquiry_title" type="text">
+        </div>
+      </div>
+
+      <div class="form-content">
+        <label for="Inquiry_content">
+          <h2>문의 내용</h2>
+        </label>
+        <div class="form-input">
+          <input id="Inquiry_content" type="text">
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="layout2.html">HugShoe</a>
+      </div>
+      
+      <div class="footer-content">
+        <p>(주) HugShoe</p>
+        <p>대표이사 : 김나영 | 사업자등록번호 : 123-12-1234</p>
+        <p>주소 : 경기도 시흥시 신천동</p>
+        <p>통신판매업신고번호 : 2024-경기시흥-1234</p>
+        <p>이메일 : HugShoe@gmail.com</p>
+      </div>
+      
+      <div class="footer-content">
+        <p>이용약관 · 법적고지</p>
+        <p>개인정보처리방침</p>
+        <p>청소년보호방침</p>
+        <p>영상정보처리기기 운영/관리 방침</p>
+        <p>이메일무단수집거부</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

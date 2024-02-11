@@ -6,8 +6,9 @@
 /* 헤더 */
 #header{
   width: 100%;
-  height: 15vh;
   background: #fff;
+  position: fixed;
+  z-index: 7;
 }
 .header-coupon{
   display: flex;
@@ -55,6 +56,7 @@
   width: 90%;
   height: 70vh;
   border-radius: 0.3rem;
+  padding-top: 12rem;
 }
 .banner-container{
   width: 90%;
@@ -90,7 +92,7 @@
 #nav{
   width: 100%;
   display: flex;
-  padding: 2.5rem 0;
+  padding: 3rem 0 0 0;
 }
 .nav-menu{
   display: flex;
@@ -114,7 +116,125 @@
   border-radius: 0.5rem;
 }
 
+
+/* 메인 : 상품 */
+#product{
+  padding: 5rem 0;
+}
+#product .title{
+  padding: 2rem 0 2rem 8rem;
+  font-size: 1.8rem;
+  font-family: 'Nanum Myeongjo', serif;
+}
+.product-container{
+  display: flex;
+}
+.product-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-item img{
+  width: 50%;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+.product-item img:hover{
+  transform: scale(1.2);
+}
+.product-content{
+  padding: 2rem 0;
+}
+.product-content p{
+  padding: 0.4rem 0;
+}
+.product-content .product-tag{
+  font-size: 0.9rem;
+  color: #75787B;
+}
+.product-content .product-title{
+  font-size: 1.4rem;
+}
+.product-content .product-price{
+  font-size: 1.2rem;
+}
+
+/* 폼 양식 */
+#form{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  background: #ded7cf;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 3rem;
+}
+.form-container h1{
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.form-content{
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+}
+.form-content h2{
+  padding: 1rem 0;
+}
+.form-select select{
+  width: 54%;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1rem;
+}
+.form-input input{
+  width: 50%;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.5rem;
+}
+.form-input #Inquiry_content{
+  height: 30vh;
+}
+
+
+/* 푸터 */
+#footer{
+  width: 100%;
+  height: 25vh;
+  background:#3c3c3c;
+  color: #fff;
+}
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.footer-container .footer-logo{
+  padding: 0 2rem;
+  font-size: 2.2rem;
+  font-family: 'Dancing Script', cursive;
+}
+.footer-logo a{
+  color: #fff;
+}
+.footer-content p{
+  padding: 0.3rem 8rem;
+  font-size: 0.8rem;
+}
+
+
 @media screen and (max-width: 1200px) {
+
+  /* 네브 메뉴 */
   .nav-menu{
     display: flex;
     margin: auto;
@@ -128,160 +248,27 @@
   .nav-item i{
     font-size: 3rem;
   }
-}
 
-
-
-/* 여기옛날 */
-.responseLayout-container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.responseLayout-container .item{
-  padding: 30px;
-}
-.responseLayout-container .col2{
-  display: flex;
-}
-.responseLayout-container i{
-  background: #776B5D;
-  padding: 2rem;
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-}
-
-.responseLayout-container i:hover{
-  background: #9c9082;
-  transform: scale(1.2);
-}
-
-
-/* 상품 레이아웃 애니메이션 */
-.shop-container{
-  display: flex;
-  width: 90%;
-  margin: auto;
-}
-.shop-item{
-  width: 33%;
-  padding: 2rem;
-  cursor: pointer;
-}
-.shop-item img{
-  width: 100%;
-  display: block;
-}
-.overlay-wrap{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #00000082;
-  margin-top: 100%;
-  transition: all 1s;
-  text-align: center;
-  color: #fff;
-}
-.overlay-wrap:hover .overlay{
-  margin-top: 50%;
-}
-
-
-/* 폼 contact */
-.form-background{
-  background: url('../img/banner.jpg') no-repeat;
-  background-size: cover;
-  height: 530px;
-  display: flex;
-  justify-content: center;
-}
-.form-white{
-  background: #fff;
-  padding: 30px;
-  width: 80%;
-  max-width: 600px;
-  margin: auto;
-}
-.form-contact h2{
-  padding-bottom: 2rem;
-}
-.form-contact label{
-  position: relative;
-  bottom: 3px;
-}
-.form-contact .container{
-  padding: 5px;
-}
-.form-contact input{
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #776B5D;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-FirstName{
-  float: left;
-  width: 50%;
-}
-.form-LastName{
-  float: left;
-  width: 50%;
-}
-.form-message input{
-  height: 100px;
-}
-.form-footer{
-  display: flex;
-  justify-content:space-between;
-}
-.form-subscribe{
-  display: flex;
-}
-.form-subscribe label{
-  padding-left: 5px;
-}
-.form-send button{
-  width: 100px;
-  border: none;
-  background: #776B5D;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-}
-input::-webkit-input-placeholder{
-  color: #776B5D;
-}
-
-
-@media screen and (max-width:576px) {
-  .responseLayout-container{
+  /* 메인 : 상품 */
+  #product .title{
+    padding: 2rem 0 2rem 11.5rem;
+  }
+  .product-container{
+    display: flex;
     flex-direction: column;
   }
-}
+  .product-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-@media screen and (max-width: 1200px) {
-  .responseLayout-container .col2{
-    display: block;
+  .product-item img:hover{
+    transform: scale(1.1);
   }
-  
-  /* 메인 */
-  .main-container{
-    font-size: 15px;
-  }
-  .main-background .main-btn{
-    font-size: 18px;
-  }
-  .nav-container{
-    font-size: 20px;
+
+  /* 푸터 */
+  .footer-content p{
+    padding: 0.3rem 1rem;
   }
 }
