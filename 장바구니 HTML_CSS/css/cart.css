@@ -33,17 +33,12 @@ tbody td{
   font-size: 1.3rem;
   text-align: center;
 }
-.table-product {
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-}
-.table-product img{
-  padding: 0 1rem;
-  width: 30%;
+tbody img{
+  border-radius: 0.3rem;
+  width: 100%;
   transition: all 1s;
 }
-.table-product img:hover{
+tbody img:hover{
   transform: scale(1.2);
 }
 .import-text{
@@ -88,9 +83,13 @@ tfoot td{
   tbody td{
     font-size: 0.7rem;
   }
-  .table-product img{
-    padding: 0 0.8rem;
+  tbody img{
+    border-radius: 0.3rem;
     width: 100%;
+    transition: all 1s;
+  }
+  tbody img:hover{
+    transform: scale(1.1);
   }
 
   /* 테이블 푸터 */
