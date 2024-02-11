@@ -164,44 +164,40 @@
 /* 폼 양식 */
 #form{
   display: flex;
-  margin: auto;
-  width: 90%;
+  width: 100%;
   background: #ded7cf;
   border-radius: 0.3rem;
   margin-bottom: 2rem;
+  padding: 1rem 0;
 }
 .form-container{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 2rem 3rem;
+  justify-content: center;
+  align-items: center;
 }
 .form-container h1{
   font-size: 1.5rem;
   padding: 1rem 0;
   font-weight: 600;
 }
-.form-content{
-  padding: 0.8rem 0;
-  font-size: 1.2rem;
+.write-container{
+  width: 40%;
 }
-.form-content h2{
-  padding: 1rem 0;
+.write-input p{
+  padding: 0.5rem 0;
 }
-.form-select select{
-  width: 54%;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.8rem 1rem;
+.write-container .write-input{
+  padding: 0.5rem 0;
 }
-.form-input input{
-  width: 50%;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.8rem 1.5rem;
+.write-input .content{
+  height: 150px;
 }
-.form-input #Inquiry_content{
-  height: 30vh;
+#form button{
+  width: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 

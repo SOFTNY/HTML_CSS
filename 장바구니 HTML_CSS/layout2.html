@@ -139,41 +139,44 @@
   </main>
 
   <!-- 폼 양식 -->
-  <div id="form">
-    <form class="form-container" action="post">
+  <form id="form" action="post">
+    <div class="form-container">
       <h1>1:1 문의사항</h1>
-      <div class="form-content">
-        <h2>문의 유형</h2>
-        <div class="form-select">
-          <select>
-            <option value="문의 유형 선택" selected disabled>문의 유형 선택</option>
+
+      <div class="write-container">
+        <div class="write-input">
+          <label for="inqury-option">
+            <p>문의내용</p>
+          </label>
+          <select id="inqury-option" class="line-input">
+            <option value="문의">1:1 문의사항</option>
             <option value="환불/교환">환불/교환</option>
             <option value="배송">배송</option>
-            <option value="인터넷">인터넷 문제</option>
+            <option value="인터넷 문제">인터넷 문제</option>
             <option value="기타">기타</option>
           </select>
         </div>
+
+        <div class="write-input">
+          <label for="title">
+            <p>제목</p>
+          </label>
+          <input class="line-input" type="text" id="title">
+        </div>
+
+        <div class="write-input">
+          <label for="content">
+            <p>내용</p>
+          </label>
+          <input class="line-input content" type="text" id="content">
+        </div>
+
       </div>
 
-      <div class="form-content">
-        <label for="Inquiry_title">
-          <h2>문의 제목</h2>
-        </label>
-        <div class="form-input">
-          <input id="Inquiry_title" type="text">
-        </div>
-      </div>
+      <button class="cotton-button">SEND</button>
+    </div>
 
-      <div class="form-content">
-        <label for="Inquiry_content">
-          <h2>문의 내용</h2>
-        </label>
-        <div class="form-input">
-          <input id="Inquiry_content" type="text">
-        </div>
-      </div>
-    </form>
-  </div>
+  </form>
 
 
   <!-- 푸터 -->
