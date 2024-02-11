@@ -229,6 +229,14 @@
 
 @media screen and (max-width: 1200px) {
 
+  /* 헤더 */
+  .header-coupon a{
+    font-size: 0.5rem;
+  }
+  .header-coupon i{
+    padding: 0 0.5rem;
+  }
+
   /* 배너 */
   #banner{
     display: flex;
