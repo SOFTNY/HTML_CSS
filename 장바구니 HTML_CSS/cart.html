@@ -1,106 +1,162 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-
-    <!-- open graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/page.html">
-    <meta property="og:title" content="Content Title">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:description" content="Description Here">
-    <meta property="og:site_name" content="Shoes Shop">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://i.pinimg.com/564x/b4/03/f9/b403f96362a311ff9271b1748de7a37a.jpg"/>
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- favicon -->
-<!-- favicon -->
-<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
   <meta charset="UTF-8">
+  <!-- open graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url"
+    content="http://nana0.dothome.co.kr/HTML_CSS/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20HTML_CSS/layout2.html">
+  <meta property="og:title" content="HugShoe">
+  <meta property="og:image" content="https://i.pinimg.com/564x/b4/03/f9/b403f96362a311ff9271b1748de7a37a.jpg" />
+  <meta property="og:image:width" content="564">
+  <meta property="og:image:height" content="1001">
+  <meta property="og:description" content="당신이 원하는 이쁜 신발을 HugShoe에서 찾아보세요!">
+  <meta property="og:site_name" content="HugShoe">
+  <meta property="og:locale" content="ko_KR">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="keywords" content="shoes, shoes shop, new shoes, shoes 웹사이트,HugShoe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HugShoe Cart</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/layout2.css">
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/cart.css">
-  <title>cart</title>
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!-- js -->
+  <script defer src="https://kit.fontawesome.com/29cf9aada0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-  <div class="background-sky">
-    <div class="container">
+  <!-- 헤더 -->
+  <header id="header">
+    <div class="header-coupon">
+      <a href="">
+        <p>신규가입시 무료배송 및 할인쿠폰까지! 다양한 혜택을 받아보세요!
+          <i class="fa-solid fa-chevron-right"></i>
+        </p>
+      </a>
+    </div>
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="layout2.html">HugShoe</a>
+      </div>
+      <div class="header-menu">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <div id="cart">
+    <div class="cart-container">
       <h1 class="title brown-dark">Your Shopping cart</h1>
-      
-      <table class="cart-table">
-        <thead class="brown-light">
+
+      <table class="table">
+        <thead class="border">
           <tr>
-            <th colspan='2'>ITEM</th>
-            <th>AMOUNT</th>
-            <th>PRICE</th>
-            <th>TOTAL</th>
+            <th>제품명</th>
+            <th>색상</th>
+            <th>가격</th>
+            <th>갯수</th>
+            <th>삭제</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr class="tbody-tr">
-            <td colspan='2'>
-              <div class="table-product">
-                <img width="150" src="img/product_01.jpg" alt="headphone">
-                <div class="pl-100">
-                  <p class="brand-title brown-dark">Sky Shoes</p>
-                  <p class="brown-light product-name">Green Shoes 230mm~270mm</p>
-                </div>
-              </div>
+          <tr class="border">
+            <td class="table-product">
+              <img src="img/cottonShoes_white.jpg" alt="cottonShoes_white">
+              <p>Winter Cotton Shoes</p>
             </td>
-            <td class="brown-light">1</td>
-            <td class="brown-light">€ 189.00</td>
-            <td class="brown-dark">€ 189.00</td>
+            <td>White</td>
+            <td>120,000원</td>
+            <td>
+              <button class="num-button"><i class="fa-solid fa-minus"></i></button>
+              <input class="num-input" type="text" value="1" disabled>
+              <button class="num-button"><i class="fa-solid fa-plus"></i></button>
+            </td>
+            <td>
+              <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </td>
           </tr>
-          <tr class="tbody-tr">
-            <td colspan='2'>
-              <div class="table-product">
-                <img width="150" src="img/product_02.jpg" alt="headphone">
-                <div class="pl-100">
-                  <p class="brand-title brown-dark">Pink Shoes</p>
-                  <p class="brown-light product-name">Gray Shoes 230mm~270mm</p>
-                </div>
-              </div>
+
+          <tr class="border">
+            <td class="table-product">
+              <img src="img/cottonShoes_darkgray.png" alt="cottonShoes_white">
+              <p>Winter Cotton Shoes</p>
             </td>
-            <td class="brown-light">1</td>
-            <td class="brown-light">€ 189.00</td>
-            <td class="brown-dark">€ 189.00</td>
+            <td>DarkGray</td>
+            <td>120,000원</td>
+            <td>
+              <button class="num-button"><i class="fa-solid fa-minus"></i></button>
+              <input class="num-input" type="text" value="1" disabled>
+              <button class="num-button"><i class="fa-solid fa-plus"></i></button>
+            </td>
+            <td>
+              <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </td>
           </tr>
         </tbody>
 
-        <tfoot>
+        <tfoot class="border">
           <tr>
-            <td colspan='5' class="brown-dark">
-                € 378.00
+            <td colspan="5">
+              <span class="import-text">총합 : 240,000원</span>
             </td>
           </tr>
         </tfoot>
       </table>
-      
-      <div class="bottom-btns">
-        <a class="brown-dark" href="layout2.html">Edit your shopping cart</a>
-        <button>Choose payment method</button>
-      </div>
     </div>
   </div>
-  
+
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="layout2.html">HugShoe</a>
+      </div>
+
+      <div class="footer-content">
+        <p>(주) HugShoe</p>
+        <p>대표이사 : 김나영 | 사업자등록번호 : 123-12-1234</p>
+        <p>주소 : 경기도 시흥시 신천동</p>
+        <p>통신판매업신고번호 : 2024-경기시흥-1234</p>
+        <p>이메일 : HugShoe@gmail.com</p>
+      </div>
+
+      <div class="footer-content">
+        <p>이용약관 · 법적고지</p>
+        <p>개인정보처리방침</p>
+        <p>청소년보호방침</p>
+        <p>영상정보처리기기 운영/관리 방침</p>
+        <p>이메일무단수집거부</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 /* Custom */
 
-/* 버튼 */
+/* layout2 - 버튼 */
 .cotton-button{
   border: none;
   padding: 0.5rem 1.5rem;
@@ -11,4 +11,44 @@
 .cotton-button:hover{
   background: #a9a29a;
   color: #fff;
+}
+
+/* cart - color */
+.dark-brown{
+  color: #3c3c3c;
+}
+.light-brown{
+  color: #75787B;
+}
+
+.import-text{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* cart - 선 */
+.border{
+  border-collapse: collapse;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+/* cart - 갯수 */
+.num-button{
+  border: none;
+  font-size: 0.9rem;
+  background: #D0C9BF;
+  color: #fff;
+}
+.num-input{
+  border: none;
+  padding: 0.6rem 0.5rem;
+  width: 20%;
+  text-align: center;
+}
+
+/* cart - button */
+.close-button{
+  border: none;
+  font-size: 1.2rem;
+  background: none;
 }
