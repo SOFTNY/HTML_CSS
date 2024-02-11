@@ -36,6 +36,7 @@ tbody td{
 .table-product {
   display: flex;
   align-items: center;
+  vertical-align: middle;
 }
 .table-product img{
   padding: 0 1rem;
@@ -45,8 +46,9 @@ tbody td{
 .table-product img:hover{
   transform: scale(1.2);
 }
-.table-product p{
-  padding: 1rem 0;
+.import-text{
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 
@@ -63,19 +65,37 @@ tfoot td{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
   }
   .cart-container{
     display: flex;
     flex-direction: column;
+    vertical-align: middle;
+  }
+  .cart-container h1{
+    font-size: 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600;
+    padding: 1.5rem 0;
+  }
+  
+  /* 테이블 헤더 */
+  thead th{
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
   }
 
+  /* 테이브 바디 */
   tbody td{
-    font-size: 1rem;
+    font-size: 0.7rem;
+  }
+  .table-product img{
+    padding: 0 0.8rem;
+    width: 100%;
   }
 
-  tbody img{
-    width: 40%;
+  /* 테이블 푸터 */
+  .import-text{
+    font-size: 1.3rem;
   }
 
 }
