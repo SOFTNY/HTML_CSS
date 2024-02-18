@@ -92,6 +92,9 @@ tfoot td{
   }
 
   /* 테이블 푸터 */
+  #footer{
+    padding: 2rem 0;
+  }
   .import-text{
     font-size: 1.3rem;
   }
