@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
 #bg-dark{
   background: linear-gradient(to bottom, #070421, #221c63, #3e3e77);
   height: 100vh;
@@ -12,6 +14,7 @@
   border-radius: 50%;
   background: linear-gradient(to bottom, #ffda7b, #ffd86e,#ecd9a4, #fceabb);
   box-shadow: 2px 2px 20px #ffffff;
+  color: #fff;
   display: flex;
   margin: auto;
   cursor: pointer;
@@ -21,6 +24,14 @@
   width: 100%;
   height: 100%;
   transform: scale(1.5);
+}
+.fullMoon span{
+  position: absolute;
+  top: 7.6rem;
+  left: 6rem;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 2rem;
+  transition: all 0.3s;
 }
 
 
@@ -70,6 +81,64 @@
 .banner-img img{
   margin-bottom: -3.2rem;
 }
+
+
+
+/* 화면 스크린보다 작은 */
+@media only screen and (min-width: 40em) {
+  .fullMoon{
+    width: 40%;
+    height: 40%;
+  }
+
+  .fullMoon span{
+    position: absolute;
+    top: 7.6rem;
+    left: 6.1rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2rem;
+    transition: all 0.3s;
+  }
+}
+
+/* 핸드폰 모바일 */
+@media only screen and (min-width: 48em) {
+  .fullMoon{
+    width: 40%;
+    height: 20%;
+  }
+
+  .fullMoon span{
+    position: absolute;
+    top: 11rem;
+    left: 9.4rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+}
+
+/* 화면 스크린 전체 */
+@media only screen and (min-width: 64em) {
+  .fullMoon{
+    width: 28%;
+    height: 55%;
+  }
+
+  .fullMoon span{
+    position: absolute;
+    top: 10rem;
+    left: 9.3rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 3rem;
+    transition: all 0.3s;
+  }
+}
+
+
+
+
+
 
 
 /* 메인 */
