@@ -1,4 +1,4 @@
-# [🔗HugShoe](http://nana0.dothome.co.kr/HTML_CSS/%EC%9E%A5%EB%B0%94%EA%B5%AC%EB%8B%88%20HTML_CSS/layout2.html)
+# [🔗HugShoe](http://nana0.dothome.co.kr/HTML_CSS/HugShoe/cart.html)
 
 나의 발을 포근하게 감싸주는 신발을 찾고계신가요?<br/>
 HugShoe에서 예쁘고 나의 발 사이즈를 포근하게 감싸주는 신발을 찾아보세요!
